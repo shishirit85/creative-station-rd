@@ -1,0 +1,21 @@
+@media print {
+  a:after {
+    content: "( "attr(href)" )"
+  }
+
+  a[href]:after {
+    content: none !important;
+  }
+
+  article img {
+    width: 300px !important;
+  }
+
+  .desktop-navigation, .post-navigation, .newsletter, .visit-international {
+    display: none;
+  }
+
+  .single-post article {
+    margin-top: 20px;
+  }
+}

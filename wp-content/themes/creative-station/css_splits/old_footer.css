@@ -1,0 +1,104 @@
+footer .social-media {
+    text-align: center;
+    z-index: 1;
+    width: 35%;
+    float: left;
+  }
+  footer .social-media ul {
+    padding: 0;
+    margin: 0;
+  }
+  footer .social-media ul li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 1%;
+  }
+  footer .social-media ul li:last-of-type {
+    padding-right: 0;
+  }
+  footer .visit-international,
+  footer .flags {
+    margin-top: 20px;
+  }
+  footer .visit-international span {
+    color: #0079c1;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 15%;
+    margin-right: 3%;
+  }
+  footer .flags {
+    display: inline-block;
+  }
+  footer .flags li {
+    display: inline;
+  }
+  footer .newsletter {
+    display: none;
+    text-align: center;
+    color: #7d7d7d;
+  }
+  footer .newsletter p {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  footer .newsletter .block-subscribe {
+    display: block;
+  }
+  footer .newsletter .input-group {
+    display: inline;
+    vertical-align: top;
+  }
+  footer .newsletter .input-group input {
+    border: 1px solid #dc002e;
+    height: 40px;
+    display: inline;
+    padding: 0 0 0 2%;
+    width: 60%;
+    font-weight: 500;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    vertical-align: top;
+  }
+  footer .newsletter .button {
+    background-color: #dc002e;
+    height: 40px;
+    border: 0;
+    color: white;
+    display: inline;
+    position: relative;
+    right: 4px;
+    padding: 7px 3%;
+  }
+  footer .newsletter .button span {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .block-subscribe {
+    display: none;
+  }
+  
+  @media (max-width: 991px) {
+    .visit-international span {
+      margin: 0 5%;
+    }
+  }
+  /* Mobile devices, less than 767px */
+  @media (max-width: 767px) {
+    footer .visit-international {
+      text-align: center;
+    }
+    footer .flags {
+      text-align: center;
+      clear: both;
+    }
+  
+    .visit-international span {
+      width: 100%;
+      margin: 0 !important;
+    }
+  }

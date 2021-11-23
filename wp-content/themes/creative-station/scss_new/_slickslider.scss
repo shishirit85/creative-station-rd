@@ -1,0 +1,294 @@
+//urls
+
+$right_arrow: url(images/dark_blue_right_arrow.png);
+$left_arrow: url(images/dark_blue_left_arrow.png);
+
+.top-ideas-slider, .mobile-slider {
+  background: url(images/headers/header1.jpg);
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: 300px;
+  min-height: 300px;
+  
+  div {
+    a {
+      display: none;
+    }
+    .top-ideas-title {
+      display: none;
+    }
+  }
+  &.slick-initialized {
+    display: block;
+    background: none;
+    height: auto;
+    min-height: auto;
+	// width: 1180px;
+	margin: auto;
+    div {
+      a {
+        display: block;
+      }
+      .top-ideas-title {
+        display: block;
+      }
+    }
+    .slick-list {
+      position: relative;
+      opacity: 1;
+      transition: opacity 0.2s ease-in;
+      .slick-track .slick-slide {
+        margin: 0;
+        display: block;
+      }
+    }
+    // .slick-slide{
+    // 	display: block;
+    // }
+  }
+  .slick-list {
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+    .slick-track .slick-slide {
+      margin: 0;
+      display: none;
+    }
+  }
+  // .slick-next {
+  // 	top: 30%;
+  // 	&:before {
+  // 		background-image: $right_arrow;
+  // 		background-repeat: no-repeat;
+  // 		display: block;
+  // 		content: '';
+  // 		width: 32px;
+  // 		height: 45px;
+  // 		// -webkit-transform: rotate(-90deg);
+  // 		// -moz-transform: rotate(-90deg);
+  // 		// -ms-transform: rotate(-90deg);
+  // 		// -o-transform: rotate(-90deg);
+  // 		border: none;
+  // 	}
+  // }
+  // .slick-prev {
+  // 	top: 30%;
+  // 	&:before {
+  // 		background-image: $left_arrow;
+  // 		background-repeat: no-repeat;
+  // 		display: block;
+  // 		content: '';
+  // 		width: 32px;
+  // 		height: 45px;
+  // 		// -webkit-transform: rotate(90deg);
+  // 		// -moz-transform: rotate(90deg);
+  // 		// -ms-transform: rotate(90deg);
+  // 		// -o-transform: rotate(90deg);
+  // 		border: none;
+  // 	}
+  // }
+  .images > ul {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1025px) {
+  .top-ideas {
+    .prev {
+      left: -35px !important;
+      position: absolute;
+      &.mobile{
+        display: none !important;
+      }
+    }
+    .next {
+      right: -45px !important;
+      position: absolute;
+      &.mobile{
+        display: none !important;
+      }
+    }
+  }
+  .top-ideas-slider .slick-slide img , .mobile-slider .slick-slide img {
+    max-height: 292px;
+    width: 280px;
+    height: 280px;
+    margin: auto;
+  }
+  .top-ideas-slider .slick-slide, .mobile-slider .slick-slide {
+    max-height: 350px;
+  }
+}
+@media (min-width:992px) and (max-width:1025px) {
+  .top-ideas-slider, .mobile-slider{
+    &.slick-initialized{
+      width: 940px; 
+    }
+  }
+  .top-ideas {
+    .prev {
+      left: -15px !important;
+      position: absolute;
+      &.mobile{
+        display: none !important;
+      }
+    }
+    .next {
+      right: -20px !important;
+      position: absolute;
+      &.mobile{
+        display: none !important;
+      }
+    }
+  }
+  .top-ideas-slider .slick-slide img , .mobile-slider .slick-slide img {
+    max-height: 230px;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+  }
+  .top-ideas-slider .slick-slide, .mobile-slider .slick-slide {
+    max-height: 350px;
+  }
+  
+}
+@media (min-width: 768px) and(max-width:992px) {
+  .top-ideas {
+    .prev {
+      left: -10px !important;
+      position: absolute;
+      &.mobile{
+        display: none;
+      }
+    }
+    .next {
+      right: -15px !important;
+      position: absolute;
+      &.mobile{
+        display: none;
+      }
+    }
+  }
+  .top-ideas-slider .slick-slide img, .mobile-slider .slick-slide img {
+    max-height: 320px;
+    width: 320px;
+    height: 320px;
+    margin: auto;
+  }
+}
+.slick-prev {
+  top: 30% !important;
+  background: none !important;
+  border: none;
+  font-size: 0;
+  &:before {
+    content: "" !important;
+  }
+}
+.slick-next {
+  top: 30% !important;
+  background: none !important;
+  border: none;
+  font-size: 0;
+  &:before {
+    content: "" !important;
+  }
+}
+@media (max-width: 767px) {
+  .top-ideas-slider, .mobile-slider {
+    min-height: 210px; 
+    height:210px;
+    .col {
+      max-width: 100% !important;
+      &:nth-of-type(n + 3) {
+        display: none;
+      }
+    }
+    &.slick-initialized .col:nth-of-type(n + 3) {
+      display: block;
+    }
+	&.slick-initialized{
+		width: 90%;
+	}
+  }
+  .prev {
+    font-size: 11px;
+  }
+  .next {
+    font-size: 11px;
+  }
+  .text {
+    font-size: 11px;
+  }
+  .top-ideas {
+    .prev {
+      left: -5px !important;
+      position: absolute;
+    }
+    .next {
+      right: -5px !important;
+      position: absolute;
+    }
+  }
+  .slick-slider img {
+    max-height: 165px;
+    width: 165px;
+    height: 165px;
+    margin: auto;
+  }
+}
+
+.top-ideas {
+  .next {
+	  display: none;
+    top: 45%;
+    &:before {
+      background-image: $right_arrow;
+      background-repeat: no-repeat;
+      display: block;
+      content: "";
+      width: 20px;
+      height: 30px;
+      background-size: contain;
+      // -webkit-transform: rotate(-90deg);
+      // -moz-transform: rotate(-90deg);
+      // -ms-transform: rotate(-90deg);
+      // -o-transform: rotate(-90deg);
+      border: none;
+    }
+    background: none !important;
+    border: none;
+    font-size: 0;
+    &:before {
+      content: "" !important;
+    }
+  }
+  .prev {
+	  display: none;
+    top: 45%;
+    &:before {
+      background-image: $left_arrow;
+      background-repeat: no-repeat;
+      display: block;
+      content: "";
+      width: 20px;
+      height: 30px;
+      background-size: contain;
+      // -webkit-transform: rotate(-90deg);
+      // -moz-transform: rotate(-90deg);
+      // -ms-transform: rotate(-90deg);
+      // -o-transform: rotate(-90deg);
+      border: none;
+    }
+    background: none !important;
+    border: none;
+    font-size: 0;
+    &:before {
+      content: "" !important;
+    }
+  }
+  img:not([src]) {
+    visibility: hidden;
+}
+}
+
+

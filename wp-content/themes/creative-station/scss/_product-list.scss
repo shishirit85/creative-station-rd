@@ -1,0 +1,239 @@
+.product {
+    overflow: auto;
+}
+
+.tocart {
+    background: #ea1a35;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    width: 100%;
+    padding: 12.5px;
+    border: 0;
+    font-size: 19px;
+    padding: 7.5px;
+    outline: none;
+
+    &[disabled] {
+        opacity: .5;
+        cursor: default;
+        pointer-events: none;
+    }
+}
+
+.product-name a, .pack-size {
+    color: #00aeef;
+    text-decoration: none;
+}
+
+.product-name a {
+    &:hover {
+        color: #00aeef;
+    }
+}
+
+.was.price {
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.special-price {
+    color: #ea1a35;
+    font-size: 17px;
+}
+
+#add-to-cart {
+    hr {
+        clear: both;
+        border-top: 1px solid #c2c2c2;
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+    .actions {
+        overflow: auto;
+
+        > div {
+            float: right;
+            min-width: 60%;
+        }
+
+        .tocart {
+            float: right;
+        }
+    }
+
+    .total-label {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #ea1a35;
+    }
+
+    .totals {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        .total {
+            float: right;
+            font-size: 20px;
+        }
+    }
+
+    .field.qty {
+        clear: both;
+
+        label {
+            font-weight: lighter;
+            color: #00aeef;
+            text-transform: uppercase;
+        }
+    }
+
+    .sku {
+        font-weight: lighter;
+        display: inline-block;
+        margin-right: 8px;
+    }
+}
+
+.what-you-need {
+    background-color: #e0f3fa;
+    margin-top: 20px;
+
+    &.no-skus {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding-inline-start: 20px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 20px;
+        color: #00aeef;
+    }
+}
+
+input.qty {
+    -moz-appearance: textfield;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 0;
+    font-weight: lighter;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.change-qty-btn {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    position: relative;
+
+    &:before {
+        width: 28px;
+        height: 28px;
+        content: '';
+        left: 0;
+        position: absolute;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &.decrease:before {
+        background-image: url("../creative-station/images/thin-minus.png");
+    }
+
+    &.increase:before {
+        background-image: url("../creative-station/images/thin-plus.png");
+    }
+}
+
+.stock {
+    &.available {
+        color: #009643;
+        margin-right: 15px;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 9px;
+            height: 14px;
+            border: solid #009643;
+            border-width: 0 4px 4px 0;
+            transform: rotate(45deg);
+            margin-right: 10px;
+            margin-left: 5px;
+            background: 0 0;
+        }
+    }
+
+    &.unavailable {
+        padding-left: 25px;
+        color: #ea1a35;
+        position: relative;
+
+        &:before {
+            background: 0 0;
+            content: "+";
+            display: inline-block;
+            transform: rotate(45deg);
+            top: 8px;
+            left: 0;
+            line-height: 0;
+            position: absolute;
+            font-size: 36px;
+            font-weight: 700;
+        }
+    }
+}
+
+.product-image-container {
+    float: left;
+    width: 40%;
+
+    img {
+        border: 1px solid #c2c2c2;
+        width: 100%;
+    }
+}
+
+.product-info {
+    float: right;
+    width: 50%;
+}
+
+.price-container {
+    display: inline-block;
+
+    > div {
+        display: inline;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+    .change-qty-btn:before {
+        width: 26px;
+        height: 26px
+    }
+
+    .change-qty-btn {
+        width: 26px;
+        height: 26px
+    }
+
+    .control.qty input {
+        height: 26px;
+    }
+}

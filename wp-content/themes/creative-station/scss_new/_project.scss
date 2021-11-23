@@ -1,0 +1,465 @@
+h1.entry-title {
+  font-size: $f-size-xxl;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.post {
+  header + p {
+    font-size: $f-size-xl;
+  }
+}
+
+.post-date {
+  font-weight: bold;
+}
+
+.post-image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.tag-with {
+  float: left;
+}
+
+.tagged-with {
+  font-size: $f-size-xs;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  > p {
+    &:nth-child(1) {
+      display: none;
+    }
+  }
+}
+
+.tags {
+  float: right;
+  width: 72%;
+
+  &:after {
+    content: "";
+    clear: both;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
+
+.top-craft-ideas {
+  position: relative;
+  background-color: $c-white;
+  padding: 10px 20px;
+
+  > div h4 {
+    color: $c-white;
+    margin: 0;
+    padding: 10px 0;
+    background-color: $c-dark-blue;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  > div h4 span {
+    text-transform: uppercase;
+    color: $c-white;
+  }
+
+  > div.what-you-need-block h4 {
+    margin-bottom: 20px;
+
+    span {
+      text-transform: none;
+      font-size: 20px;
+    }
+  }
+
+  .row {
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .related-text{
+    @media screen and (min-width: 797px) {
+      height: 150px;
+    }
+    a{
+      font-size: 16px;
+    }
+  }
+  a.btn.link {
+   font-size: 14px;
+    @media screen and (min-width: 797px) {
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      
+    }
+
+    @media screen and (max-width: 796px) {
+      width: 75%;
+    }
+  }
+}
+
+.post-navigation {
+  margin-top: 30px;
+  overflow: auto;
+  border-top: 1px dashed;
+  border-bottom: 1px dashed;
+  padding: 20px 0;
+  margin-bottom: 20px;
+
+  h2 {
+    display: none;
+  }
+}
+
+.project-instructions {
+  img {
+    width: 100%;
+    width: 100%;
+    border: 1px solid $c-gray;
+    margin-bottom: 20px;
+  }
+
+  .bold {
+    margin-bottom: 0;
+  }
+
+  p,
+  li {
+    font-weight: 400;
+  //   counter-increment: li;
+  }
+
+  // li::before{
+  //   content: counter(li); 
+  //   color: $c-red;
+  //   display: inline-block;
+  //   width: 1em;
+  //   margin-left: -1.5em;
+  //   margin-right: 0.5em;
+  //   text-align: right;
+  //   direction: rtl;
+  // }
+
+  ol {
+    padding-left: 16px;
+  }
+
+  ul {
+    padding-left: 0;
+    > li {
+      list-style: none;
+    }
+  }
+
+
+  li {
+    a {
+      font-weight: 400;
+      padding: 0;
+    }
+  }
+    
+  .template-list {
+    margin-top: 10px;
+
+    & + a {
+      font-weight: 400;
+      color: $c-red;
+    }
+  }
+}
+
+.what-you-need {
+  p.bold {
+    margin: 15px 0 10px;
+  }
+
+  ul {
+    li {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+body {
+  .project-instructions {
+    strong {
+      color: $c-red;
+      font-size: 1.5em;
+    }
+    li a {
+      color: $c-dark-blue;
+    }
+  }
+  .top-craft-ideas {
+    .col-sm-6 a {
+      color: $c-dark-blue;
+      &.btn.link {
+        color: $c-white;
+      }
+    }
+    > div h4 {
+      background-color: $c-red;
+    }
+  }
+  .post-navigation {
+    border-color: $c-red;
+  }
+  .related-title {
+    color: $c-light-blue;
+  }
+  .top-instruction-box {
+    background-color: $c-light-blue2;
+    strong {
+      font-size: 1em;
+    }
+  }
+  h1.entry-title {
+    color: $c-red;
+  }
+  .tags a {
+    color: $c-red;
+  }
+  .related-ideas h2 {
+    color: $c-light-blue;
+  }
+}
+
+.social-share {
+  > div {
+    float: left;
+    margin-right: 9%;
+  }
+
+  > span {
+    float: left;
+    margin-right: 3%;
+  }
+
+  > a {
+    margin-right: 3%;
+    margin-left: 20px;
+  }
+
+  .PIN_1474381934426_button_pin.PIN_1474381934426_save {
+    position: relative;
+    bottom: 6px;
+  }
+
+  .print {
+    background: url("../creative-station/images/print.png") no-repeat;
+    height: 21px;
+    width: 22px;
+    background-size: 20px;
+    display: inline-block;
+  }
+}
+
+.related-ideas {
+  h2 {
+    text-align: center;
+    font-size: $f-size-xxxl;
+  }
+
+  .related-title {
+    display: block;
+    margin: 10px 0px;
+    text-align: center;
+  }
+
+  .btn.link {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+
+.row.top-instruction-box {
+  padding: 10px 0 10px 0;
+  margin: 0 0 10px 2px;
+
+  p {
+    display: contents;
+
+    &:nth-child(2) {
+      font-size: $f-size;
+    }
+  }
+  .col-sm-12 {
+    margin-bottom: 5px;
+  }
+}
+
+.video {
+  width: 100%;
+  height: 202px;
+  margin-bottom: 15px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  &.mobile {
+    display: none;
+    content-visibility: hidden;
+
+    @media (max-width: 767px) {
+      display: block;
+      content-visibility: visible;
+    }
+  }
+}
+
+.post-featured-image {
+  position: relative;
+}
+
+.thumbnail-overlay {
+  display: block;
+  position: absolute;
+  width: 100px;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+/* Mobile devices, less than 767px */
+@media (max-width: 767px) {
+  .project-instructions {
+    margin-top: 20px;
+  }
+  body h1.entry-title{
+    text-align: center;
+  }
+
+  .related-ideas {
+    .col-xs-6 {
+      margin-bottom: 20px;
+
+      &:nth-child(odd) {
+        padding-right: 0;
+      }
+
+      &:nth-child(even) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .social-share {
+    padding: 0 !important;
+
+    > span,
+    > div {
+      margin-right: 5%;
+    }
+
+    .print {
+      margin: 0;
+    }
+  }
+
+  .tag-with + a {
+    padding-left: 5px;
+  }
+
+  .nav-links .post-title {
+    max-width: 126px;
+    margin: 0 auto;
+  }
+  .top-craft-ideas{
+    position: relative;
+    padding: 0px;
+    .what-you-need-block{
+      button{
+        background-color:$c-red;
+        color: $c-white; 
+        font-size: 20px;
+        &:hover, &:focus{
+          text-decoration: none;
+        }
+      }      
+    }
+    .what-you-need{
+      button{
+        &:hover, &:focus{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .top-craft-ideas .row .col-sm-6 img{
+    margin: auto;
+  }
+  .top-craft-ideas .row {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .thumbnail-overlay {
+    top: 33%;
+  }
+}
+@media (min-width:768px) and (max-width:992px) {
+  .what-you-need {
+
+  .title{
+    font-size: 18px !important;
+  }
+  ul li{
+    padding-left: 0;
+  }
+  }
+}
+
+.mobile-images{
+  content-visibility: hidden;
+
+  @media (max-width: 767px) {
+    content-visibility: visible;
+  }
+
+}
+
+.desktop-images{
+  content-visibility: visible;
+  @media (max-width: 767px) {
+    content-visibility: hidden;
+  }
+}
+
+.project-instructions{
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
+}
+
+.caret{
+  float: right;
+  margin: 10px 0;
+  vertical-align: middle;
+  border-left: 8px solid transparent!important;
+  border-right: 8px solid transparent !important;
+  border-top: 8px dashed!important;
+}
+.card-body{
+  margin-top: 20px;
+}

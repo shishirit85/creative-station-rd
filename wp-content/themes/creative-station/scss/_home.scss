@@ -1,0 +1,114 @@
+/**
+ * Homepage styles
+ */
+
+// Top ideas carousel
+.top-ideas {
+  font-size: $f-size;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: $c-dark-blue;
+    display: inline-block;
+    background-color: white;
+    padding: 0 1%;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  > div {
+    text-align: center;
+    position: relative;
+  }
+
+  .btn.btn-default {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .top-ideas-title {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .owl-prev {
+    top: 50%;
+  }
+
+  .owl-next {
+    top: 50%;
+  }
+
+  .bakerross-carousel {
+    margin-bottom: 20px;
+  }
+}
+
+.landingpage-blocks {
+  margin: 40px 0 30px 0;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px 2%;
+    color: white;
+    text-decoration: none;
+    font-size: $f-size-xxl;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 11px;
+      width: 12px;
+      background-image: url(../creative-station/images/button_white_arrow.png);
+      background-repeat: no-repeat;
+      position: relative;
+      left: 3%;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .kids {
+    h2 {
+      background-color: $c-kids-base;
+    }
+  }
+
+  .teachers {
+    h2 {
+      background-color: $c-teachers-base;
+    }
+  }
+
+  .grown-ups {
+    h2 {
+      background-color: $c-light-pink;
+    }
+  }
+}
+
+/* Mobile devices, less than 767px */
+@media (max-width: 767px) {
+  .landingpage-blocks {
+    > div {
+      margin-bottom: 10px;
+    }
+  }
+}

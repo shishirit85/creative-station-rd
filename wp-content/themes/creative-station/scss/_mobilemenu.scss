@@ -1,0 +1,242 @@
+.mm-listview {
+  a.mm-next {
+    background-image: url("../creative-station/images/button_blue_arrow.png");
+    background-repeat: no-repeat;
+    background-position: 96% 12px;
+    width: 100%;
+    top: 5px;
+
+    &:after {
+      border: 0;
+    }
+  }
+}
+
+.mm-menu {
+
+  .mm-listview {
+    li.kids {
+      background-color: $c-kids-base;
+
+      a.mm-next {
+        background-image: url("../creative-station/images/button_white_arrow.png");
+      }
+
+      a:not(.mm-next) {
+        background-color: $c-kids-base;
+      }
+    }
+
+    li.teachers {
+      background-color: $c-teachers-base;
+
+      a.mm-next {
+        background-image: url("../creative-station/images/button_white_arrow.png");
+      }
+
+      a:not(.mm-next) {
+        background-color: $c-teachers-base;
+      }
+    }
+
+    li.grown-ups {
+      background-color: $c-light-pink;
+
+      a.mm-next {
+        background-image: url("../creative-station/images/button_white_arrow.png");
+      }
+
+      a:not(.mm-next) {
+        background-color: $c-light-pink;
+      }
+    }
+
+    li.country-selector {
+      background-color: $c-light-blue;
+
+      a.mm-next {
+        background-image: url("../creative-station/images/button_blue_arrow.png");
+      }
+
+      a:not(.mm-next) {
+        background-color: $c-light-blue;
+      }
+    }
+
+    > li {
+      background-color: $c-dark-blue;
+      color: $c-white;
+
+      a {
+        padding: 13px 10px 13px 20px;
+
+        &.mm-next {
+          background-image: url("../creative-station/images/button_white_arrow.png");
+        }
+      }
+    }
+  }
+
+  .mm-panel:not(#mm-1) {
+    &.kids {
+      .mm-title {
+        background-color: $c-kids-base;
+      }
+
+      .menu-item {
+        background-color: $c-white;
+        a:not(.mm-next) {
+          color: $c-kids-base;
+          background-color: $c-white;
+          border: 1px solid $c-kids-base !important;
+          border-top: 0 !important;
+        }
+      }
+
+      .mm-next {
+        background-image: url("../creative-station/images/button_kids_arrow.png");
+      }
+    }
+
+    &.teachers {
+      .mm-title {
+        background-color: $c-teachers-base;
+      }
+
+      .menu-item {
+        background-color: $c-white;
+        a:not(.mm-next) {
+          color: $c-teachers-base;
+          background-color: $c-white;
+          border: 1px solid $c-teachers-base !important;
+          border-top: 0 !important;
+        }
+      }
+
+      .mm-next {
+        background-image: url("../creative-station/images/button_teachers_arrow.png");
+      }
+    }
+
+    &.grown-ups {
+      .mm-title {
+        background-color: $c-light-pink;
+      }
+
+      .menu-item {
+        background-color: $c-white;
+        a:not(.mm-next) {
+          color: $c-light-pink;
+          background-color: $c-white;
+          border: 1px solid $c-light-pink !important;
+          border-top: 0 !important;
+        }
+      }
+
+      .mm-next {
+        background-image: url("../creative-station/images/button_grown_ups_arrow.png");
+      }
+    }
+
+    .mm-title {
+      color: $c-white !important;
+      text-align: left;
+      padding-left: 15px;
+      background-color: $c-dark-blue;
+    }
+
+    .menu-item {
+      a:not(.mm-next) {
+        width: 100%;
+        background-color: white;
+        border: 1px solid $c-dark-blue;
+        border-top: 0;
+        color: $c-dark-blue;
+      }
+    }
+  }
+
+  .mm-prev {
+    background-image: url("../creative-station/images/button_blue_arrow_left.png");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    position: absolute;
+
+    &:before {
+      border: 0;
+    }
+  }
+
+  .mm-navbar {
+
+    .mm-close {
+      background-image: url("../creative-station/images/menu-close.png");
+      background-repeat: no-repeat;
+      background-position: 8px;
+      background-image: url("../creative-station/images/menu-close.png");
+      background-repeat: no-repeat;
+      background-position: 95% 12px;
+      height: 40px;
+      position: relative;
+      top: -40px;
+
+      &:before {
+        border: 0;
+      }
+
+      &:after {
+        border: 0;
+      }
+    }
+
+    .mm-btn:first-child {
+      position: absolute;
+      top: -40px;
+    }
+  }
+
+  .mm-panels {
+    overflow: visible;
+    background-color: $c-white;
+  }
+
+  .col-xs-2 {
+    width: 100%;
+  }
+
+  .hidden-xs {
+    display: block !important;
+  }
+
+  #mm-1 {
+    .mm-title {
+      display: none;
+    }
+  }
+
+  .mm-navbar {
+    top: 40px;
+    padding: 0;
+  }
+
+  .mm-panels>.mm-panel.mm-hasnavbar {
+    padding-top: 80px;
+  }
+
+  #mm-1 {
+    padding-top: 40px;
+
+    .mm-title {
+      display: none;
+    }
+  }
+
+  .mm-listview>li:not(.mm-divider):after {
+    display: none;
+  }
+}
+
+.view-all a {
+  color: $c-light-blue2;
+  text-transform: uppercase;
+}

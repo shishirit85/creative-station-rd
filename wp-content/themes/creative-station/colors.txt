@@ -1,0 +1,4 @@
+colors:
+#e31937 (red)
+#0079c1 (dark blue)
+#b9e0f7 (light blue)

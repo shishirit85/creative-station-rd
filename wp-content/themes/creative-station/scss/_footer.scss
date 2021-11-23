@@ -1,0 +1,153 @@
+/**
+ * Footer Styles
+ */
+footer {
+  &#colophon {
+    padding-bottom: 20px;
+    background-color: $c-white;
+    margin-top: 30px;
+  }
+
+  h3 {
+    text-align: center;
+    background-color: #0071b9;
+    color: white;
+    padding: 10px 0;
+    margin-top: 0px;
+    margin-left: 12%;
+    width: 38%;
+    float: left;
+  }
+
+  .social-media {
+    text-align: center;
+    z-index: 1;
+    width: 35%;
+    float: left;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        list-style: none;
+        padding-right: 1%;
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .visit-international, .flags {
+    margin-top: 20px;
+  }
+
+  .visit-international {
+    span {
+      color: $c-dark-blue;
+      display: inline-block;
+      font-size: $f-size-xl;
+      margin-left: 15%;
+      margin-right: 3%;
+    }
+  }
+
+  .flags {
+    display: inline-block;
+
+    li {
+      display: inline;
+    }
+  }
+
+  .newsletter {
+    display:none;
+    p {
+      font-weight: 500;
+      font-size: $f-size-xl;
+    }
+
+    text-align: center;
+    color: $c-gray-2;
+
+    .block-subscribe {
+      display: block;
+    }
+
+    .input-group {
+      display: inline;
+      vertical-align: top;
+
+      input {
+        border: 1px solid $c-red;
+        height: 40px;
+        display: inline;
+        padding: 0 0 0 2%;
+        width: 60%;
+        font-weight: 500;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        vertical-align: top;
+      }
+    }
+
+    .button {
+      background-color: $c-red;
+      height: 40px;
+      border: 0;
+      color: white;
+      display: inline;
+      position: relative;
+      right: 4px;
+      padding: 7px 3%;
+
+      span {
+        text-transform: uppercase;
+        font-size: $f-size-xxl;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.block-subscribe {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .visit-international {
+    span {
+      margin: 0 5%;
+    }
+  }
+}
+
+/* Mobile devices, less than 767px */
+@media (max-width: 767px) {
+  footer {
+    div:not(.container) {
+      padding: 0 !important;
+    }
+
+    .visit-international {
+      text-align: center;
+    }
+
+    .flags {
+      text-align: center;
+      clear: both;
+    }
+  }
+
+  .visit-international {
+    span {
+      width: 100%;
+      margin: 0 !important;
+    }
+  }
+}

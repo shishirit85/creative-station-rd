@@ -1,0 +1,188 @@
+#add-to-cart-popup {
+  .modal-dialog {
+    width: 100%;
+    max-width: 749px;
+
+    @media (max-width: 767px) {
+      width: 90%;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .modal-content {
+    padding: 10px 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    @media (max-width: 700px) {
+      padding: 10px 20px;
+    }
+  }
+
+  .modal-body,
+  .modal-footer {
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+  }
+
+  .modal-footer {
+    padding-top: 0;
+  }
+
+  .modal-header {
+    padding: 0;
+    border: 0;
+  }
+}
+
+.no-out-of-stock {
+  display: none;
+}
+
+.action-close {
+  background-image: none;
+  background: 0 0;
+  -moz-box-sizing: content-box;
+  border: 0;
+  box-shadow: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+
+  &:before {
+    content: " ";
+    display: inline-block;
+    background-image: url(../creative-station/images/cross-icon.gif);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.product-popup-actions {
+  .tocart {
+    padding: 3px;
+    max-width: 247px;
+    color: #fff;
+    text-decoration: none;
+    min-width: 247px;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+
+    @media (max-width: 700px) {
+      width: 100%;
+      display: block;
+      max-width: 100%;
+      clear: both;
+    }
+  }
+
+  span {
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: none;
+  }
+}
+
+.success-heading {
+  background-color: #009643;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 10px;
+  font-size: 25px;
+  margin: 0 0 10px 0;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 17px;
+    width: 22px;
+    background-size: 23px;
+    background-image: url(../creative-station/images/white-tick.svg);
+    margin-right: 10px;
+  }
+}
+
+.fail-heading {
+  background-color: $c-red;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 10px;
+  font-size: 25px;
+  margin: 0 0 10px 0;
+
+  &:before {
+    height: 17px;
+    width: 22px;
+    margin-right: 10px;
+    content: "+";
+    display: inline-block;
+    transform: rotate(45deg);
+    left: 0;
+    line-height: 0;
+    font-size: 39px;
+    font-weight: 700;
+  }
+}
+
+.out-of-stock-items-list,
+.added-items-list {
+  margin-bottom: 25px;
+}
+
+.white-bordered {
+  background: #fff;
+  color: $c-dark-blue;
+  border: 1px solid $c-dark-blue;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 2px 8px;
+  min-width: 247px;
+  text-align: center;
+
+  &:hover {
+    color: $c-light-blue;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    color: $c-dark-blue;
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: none;
+  }
+}
+
+.product-popup-actions .left-align {
+  float: left;
+
+  @media (max-width: 700px) {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

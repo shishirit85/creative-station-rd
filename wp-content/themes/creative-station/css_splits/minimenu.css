@@ -1,0 +1,180 @@
+.mm-listview a.mm-next {
+    background-image: url("../creative-station/images/button_blue_arrow.png");
+    background-repeat: no-repeat;
+    background-position: 96% 12px;
+    width: 100%;
+    top: 5px;
+  }
+  .mm-listview a.mm-next:after {
+    border: 0;
+  }
+  
+  .mm-menu .mm-listview li.kids {
+    background-color: #ec008c;
+  }
+  .mm-menu .mm-listview li.kids a.mm-next {
+    background-image: url("../creative-station/images/button_white_arrow.png");
+  }
+  .mm-menu .mm-listview li.kids a:not(.mm-next) {
+    background-color: #ec008c;
+  }
+  .mm-menu .mm-listview li.teachers {
+    background-color: #00af85;
+  }
+  .mm-menu .mm-listview li.teachers a.mm-next {
+    background-image: url("../creative-station/images/button_white_arrow.png");
+  }
+  .mm-menu .mm-listview li.teachers a:not(.mm-next) {
+    background-color: #00af85;
+  }
+  .mm-menu .mm-listview li.grown-ups {
+    background-color: #f178af;
+  }
+  .mm-menu .mm-listview li.grown-ups a.mm-next {
+    background-image: url("../creative-station/images/button_white_arrow.png");
+  }
+  .mm-menu .mm-listview li.grown-ups a:not(.mm-next) {
+    background-color: #f178af;
+  }
+  .mm-menu .mm-listview li.country-selector {
+    background-color: #b9e0f7;
+  }
+  .mm-menu .mm-listview li.country-selector a.mm-next {
+    background-image: url("../creative-station/images/button_blue_arrow.png");
+  }
+  .mm-menu .mm-listview li.country-selector a:not(.mm-next) {
+    background-color: #b9e0f7;
+  }
+  .mm-menu .mm-listview > li {
+    background-color: #0079c1;
+    color: #ffffff;
+  }
+  .mm-menu .mm-listview > li a {
+    padding: 13px 10px 13px 20px;
+  }
+  .mm-menu .mm-listview > li a.mm-next {
+    background-image: url("../creative-station/images/button_white_arrow.png");
+  }
+  .mm-menu .mm-panel:not(#mm-1).kids .mm-title {
+    background-color: #ec008c;
+  }
+  .mm-menu .mm-panel:not(#mm-1).kids .menu-item {
+    background-color: #ffffff;
+  }
+  .mm-menu .mm-panel:not(#mm-1).kids .menu-item a:not(.mm-next) {
+    color: #ec008c;
+    background-color: #ffffff;
+    border: 1px solid #ec008c !important;
+    border-top: 0 !important;
+  }
+  .mm-menu .mm-panel:not(#mm-1).kids .mm-next {
+    background-image: url("../creative-station/images/button_kids_arrow.png");
+  }
+  .mm-menu .mm-panel:not(#mm-1).teachers .mm-title {
+    background-color: #00af85;
+  }
+  .mm-menu .mm-panel:not(#mm-1).teachers .menu-item {
+    background-color: #ffffff;
+  }
+  .mm-menu .mm-panel:not(#mm-1).teachers .menu-item a:not(.mm-next) {
+    color: #00af85;
+    background-color: #ffffff;
+    border: 1px solid #00af85 !important;
+    border-top: 0 !important;
+  }
+  .mm-menu .mm-panel:not(#mm-1).teachers .mm-next {
+    background-image: url("../creative-station/images/button_teachers_arrow.png");
+  }
+  .mm-menu .mm-panel:not(#mm-1).grown-ups .mm-title {
+    background-color: #f178af;
+  }
+  .mm-menu .mm-panel:not(#mm-1).grown-ups .menu-item {
+    background-color: #ffffff;
+  }
+  .mm-menu .mm-panel:not(#mm-1).grown-ups .menu-item a:not(.mm-next) {
+    color: #f178af;
+    background-color: #ffffff;
+    border: 1px solid #f178af !important;
+    border-top: 0 !important;
+  }
+  .mm-menu .mm-panel:not(#mm-1).grown-ups .mm-next {
+    background-image: url("../creative-station/images/button_grown_ups_arrow.png");
+  }
+  .mm-menu .mm-panel:not(#mm-1) .mm-title {
+    color: #ffffff !important;
+    text-align: left;
+    padding-left: 15px;
+    background-color: #0079c1;
+  }
+  .mm-menu .mm-panel:not(#mm-1) .menu-item a:not(.mm-next) {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #0079c1;
+    border-top: 0;
+    color: #0079c1;
+  }
+  .mm-menu .mm-prev {
+    background-image: url("../creative-station/images/button_blue_arrow_left.png");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    position: absolute;
+  }
+  .mm-menu .mm-prev:before {
+    border: 0;
+  }
+  .mm-menu .mm-navbar .mm-close {
+    background-image: url("../creative-station/images/menu-close.png");
+    background-repeat: no-repeat;
+    background-position: 8px;
+    background-image: url("../creative-station/images/menu-close.png");
+    background-repeat: no-repeat;
+    background-position: 95% 12px;
+    height: 40px;
+    position: relative;
+    top: -40px;
+  }
+  .mm-menu .mm-navbar .mm-close:before {
+    border: 0;
+  }
+  .mm-menu .mm-navbar .mm-close:after {
+    border: 0;
+  }
+  .mm-menu .mm-navbar .mm-btn:first-child {
+    position: absolute;
+    top: -40px;
+  }
+  .mm-menu .mm-panels {
+    overflow: visible;
+    background-color: #ffffff;
+  }
+  .mm-menu .col-xs-2 {
+    width: 100%;
+  }
+  .mm-menu .hidden-xs {
+    display: block !important;
+  }
+  .mm-menu #mm-1 .mm-title {
+    display: none;
+  }
+  .mm-menu .mm-navbar {
+    top: 40px;
+    padding: 0;
+  }
+  .mm-menu .mm-panels > .mm-panel.mm-hasnavbar {
+    padding-top: 80px;
+  }
+  .mm-menu #mm-1 {
+    padding-top: 40px;
+  }
+  .mm-menu #mm-1 .mm-title {
+    display: none;
+  }
+  .mm-menu .mm-listview > li:not(.mm-divider):after {
+    display: none;
+  }
+  
+  .view-all a {
+    color: #00aeef;
+    text-transform: uppercase;
+  }
+  

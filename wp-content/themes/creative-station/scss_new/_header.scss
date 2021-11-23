@@ -1,0 +1,444 @@
+/**
+ * Header Styles
+ */
+.shop-at-bakerross {
+  display: block;
+  font-weight: bold;
+  position: relative;
+  top: 0px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 34px;
+    background: url('../creative-station/images/shopping_bag.png') no-repeat;
+    margin-right: 10px;
+    position: relative;
+    top: 8px;
+  }
+}
+
+header#masthead > div:first-of-type {
+  background-color: $c-white;
+  padding-top: 18px;
+  padding-bottom: 0px;
+}
+
+header.site-header {
+  nav {
+    background-color: $c-light-blue;
+    margin: 0 0 20px 0;
+    > div > ul {
+      padding: 0;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+
+      .sub-menu {
+        display: none;
+      }
+
+      // Parent navigation links
+      > li.menu-item {
+        > a {
+          padding: 20px 0;
+          font-size: $f-size-xxl;
+          text-align: center;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        &.active > a {
+          color: white !important;
+        }
+      }
+
+      li {
+        list-style: none;
+        display: block;
+        margin-top: 5px;
+        padding-right: 0;
+        text-align: center;
+
+        &:not(.search) {
+          margin-top: 0;
+          padding-left: 0;
+          text-align: left;
+          position: static;
+        }
+
+        > a {
+          display: block;
+        }
+
+        a {
+          color: $c-dark-blue;
+          font-size: $f-size-s;
+          text-align: left;
+        }
+        .sub-category{
+          text-transform: uppercase;
+          > a{
+          color: $c-dark-blue;
+          }
+          ul > li >a{
+                color: $c-gray-2;
+                text-transform: none;
+               } 
+          }
+        > .sub-menu{
+          > li:not(.sub-category) > a {
+              color: $c-gray-2;
+          }
+        }
+        &.search {
+          margin-top: 15px;
+        }
+
+
+        &.active {
+          &.educational, &.adults{
+            >.sub-menu{
+            column-count: 2;
+            column-gap: 15px;
+            max-width: 30%;
+            > li{
+              >.sub-menu{
+                display: inline-block;
+              }
+            }
+            }
+          }
+          // The first submenu !
+          > .sub-menu {
+            position: absolute;
+            z-index: 2;
+            padding: 1% !important;
+            white-space: nowrap;
+            border: 1px solid $c-light-blue;
+            -moz-column-count: 4;
+            -moz-column-gap: 20px;
+            -webkit-column-count: 4;
+            -webkit-column-gap: 20px;
+            column-count: 2;
+            column-gap: 15px;
+            max-width: 30%;
+            > li {
+              display: block;
+              padding-right: 20px;
+
+              // 2nd level sub categories links
+              // > a {
+              //   color: $c-gray-2;
+              // }
+
+              // Second sub-menu
+              > .sub-menu {
+                break-after: column;
+                // category links
+                // > li > a {
+                //   color: $c-gray-2;
+                //   text-transform: none;
+                // }
+              }
+            }
+          }
+
+          .sub-menu {
+            display: block;
+            background-color: white;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    .search {
+      label {
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+        border: 0;
+        height: 40px;
+        padding-left: 3%;
+        font-weight: 400;
+        font-size: 14px;
+        border: 1px solid $c-dark-blue;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        text-overflow: ellipsis;
+      }
+
+      button {
+        position: absolute;
+        right: 2%;
+        top: 10px;
+        border: 0;
+        background-color: transparent;
+        background-image: url("../creative-station/images/magnifying_glass.png");
+        background-repeat: no-repeat;
+        height: 21px;
+        width: 20px;
+      }
+    }
+  }
+}
+
+.desktop-navigation.container-fluid {
+  padding: 0;
+}
+
+.default-banner {
+  img {
+    padding: 20px 0;
+  }
+}
+
+
+.banner {
+  img {
+    width: 100%;
+  }
+}
+
+.site-branding {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Mobile devices, less than 767px */
+@media (max-width: 992px) {
+  header#masthead > div:first-of-type {
+    padding-bottom: 18px;
+  }
+
+  .pull-right-xs {
+    float: right !important;
+  }
+
+  // Mobile menu burger icon
+  #menu-mobile {
+    cursor: pointer;
+    height: 50%;
+    width: 9%;
+    background-image: url("../creative-station/images/burger-icon-red.png");
+    display: block;
+    background-repeat: no-repeat;
+    min-height: 37px;
+    min-width: 27px;
+    position: relative;
+    top: 4px;
+  }
+
+  div#page header.site-header nav {
+    // background-color: transparent;
+  }
+
+  .desktop-navigation.container-fluid {
+    padding:15px 15px 10px 15px
+  }
+}
+
+.br-logo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-57%);
+  -moz-transform: translateX(-57%);
+  -ms-transform: translateX(-57%);
+  -o-transform: translateX(-57%);
+  transform: translateX(-57%);
+  margin-right: 3%;
+}
+
+.minicart-wrapper {
+  clear: both;
+  float: right;
+  position: relative
+  margin-bottom;
+}
+
+@media (max-width: 767px) {
+  #masthead {
+    > .container-fluid > div {
+      // padding: 0;
+      position: relative;
+      > div {
+        // padding: 0;
+        > {
+          padding: 0;
+        }
+      }
+
+      .col-xs-12 {
+        // padding: 0;
+      }
+    }
+  }
+
+  body header.site-header nav {
+    // background-color: transparent;
+    margin-bottom: 10px;
+  }
+
+  .site-branding {
+    float: none !important;
+  }
+
+  div.top-ideas {
+    h2 {
+      font-size: 20px;
+
+      &:before {
+        top: 30px;
+      }
+    }
+  }
+
+  .btn {
+    font-size: $f-size-xs;
+  }
+
+  .shop-at-bakerross {
+    position: relative;
+    top: 0px;
+    margin-right: 5px;
+
+    &:before {
+      margin-right: 5px;
+      width: 20px;
+      height: 28px;
+      background-size: 20px;
+    }
+
+    span {
+      font-size: $f-size-xs;
+    }
+  }
+
+  .default-banner {
+    img {
+      padding: 0 0 20px 0;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  header.site-header{
+    nav {
+      .search {
+        input {
+          font-size: $f-size;
+        }
+      }
+    }
+  }
+
+  .br-logo {
+    width: 100%;
+    left:45%;
+
+    img {
+      max-width: 160px;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .br-logo {
+    img {
+      max-width: 150px;
+    }
+  }
+}
+
+@media(min-width: 992px) {
+	.header-box {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: min-content 1fr;
+		align-items: center;
+	}
+	.pull-left {
+		grid-row-start: 1;
+		grid-row-end: 4;
+		justify-self: start;
+	}
+	.pull-right {
+		grid-column-start: 3;
+		grid-row-start: 2;
+		justify-self: end;
+		align-self: center;
+	}
+	.minicart-wrapper {
+		grid-column-start: 3;
+		grid-row-start: 3;
+		justify-self: end;
+		align-self: center;
+		margin-top: 10px;
+    margin-bottom: 10px;
+	}
+	.logo {
+		height: 120px;
+    min-height: 120px;
+	}
+}
+
+@media(min-width: 768px) and (max-width:992px) {
+	.header-box {
+		display: grid;
+		grid-template-columns: auto auto 1fr auto auto;
+		grid-template-rows: min-content;
+		align-items: center;
+	}
+	.pull-left {
+		grid-column-start: 1;
+		justify-self: start;
+    margin-left: 5px;
+	}
+	.pull-right:not(.br-logo) {
+		grid-column-start: 4;
+		grid-row-start: 1;
+		justify-self: end;
+		align-self: center;
+	}
+	.minicart-wrapper {
+		grid-column-start: 5;
+		grid-row-start: 1;
+		justify-self: end;
+		align-self: center;
+		margin-top: 10px;
+    margin-left: 10px;
+	}
+	.logo {
+		height: 120px;
+	}
+}
+nav > div > ul > {
+	.col-xs-2 {
+		flex: 0 0 auto;
+		width: auto;
+		flex-grow: 2;
+	}
+	.col-xs-4 {
+		width: 33.33333333%;
+		align-content: flex-end;
+		justify-content: flex-end;
+	}
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .br-logo{
+    left: 22%;
+  }
+}
+// @media (min-width:768px) and (max-width:992px) {
+//   #menu-mobile {
+//       right:-15px ;
+//   }
+// }
+
